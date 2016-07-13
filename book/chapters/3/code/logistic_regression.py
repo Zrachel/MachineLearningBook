@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 def prepare_data():
 	x = np.linspace(-1, 1, 20)
-	y = [(2 + random.random()) * xi + 3 + random.random() for xi in x]
+	y = [(2 + random.random()) * pow(xi, 2) + 3 + random.random() for xi in x]
 	return x, y
 
 def model(x, w, b):
